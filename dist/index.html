@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <canvas id="tech-bg" class="fixed top-0 left-0 w-full h-full -z-10 opacity-60"></canvas>
+  <header class="bg-[#222222] text-gray-300 flex flex:-col md:flex-row justify-center h-10 p-2">
+  <div class="opacity-50">Test Tailwind CSS for design my info web page</div>    
+  </header>
+
+
+<!-- navigation bar -->
+  <nav class="flex flex-col md:flex-row w-full shadow-2xl items-center justify-between p-4">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="/img/โลโก้สาขาSE.png" alt="" class="w-16 h-16">
+      <div class="text-xl font-mono ml-4">Software Engineer</div>
+    </div>
+    <div class="mb-4 md:mb-0">
+      <ul class="flex flex-row space-x-5">
+        <li><a href="/dist/index.html" class="border-b-2 border-green-500 text-green-600 pb-1">Home</a></li>
+        <li><a href="/dist/otherpage/about.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">about</a></li>
+        <li><a href="/dist/otherpage/showcase.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">Showcase</a></li>
+        <li><a href="/dist/otherpage/contact.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">Contact</a></li>
+      </ul>
+    </div>
+    <div id="login-btn" class="flex flex-row items-center px-4 py-2 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 hover:border-green-500 hover:scale-105 transition-all duration-300">
+      <div class="w-8 h-8 mr-2"><img src="/img/person.png" alt=""></div>
+      <div id="login-text" class="text-md font-bold">Login</div>
+    </div>
+  </nav>
+
+<!-- main content -->
+<main>
+
+  <!-- img slide bar -->
+  <section class="relative w-full mt-10 group">
+    <div id="slider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth border-0 rounded-2xl ml-5 mr-5">
+      <div class="snap-center shrink-0 w-full h-100">
+        <img src="/img/banner.png" alt="Slide 1" class="w-full h-full object-cover">
+      </div>
+      <div class="snap-center shrink-0 w-full h-100">
+        <img src="/img/pic-9-202312121702374439_94869_44.png" alt="Slide 2" class="w-full h-full object-cover">
+      </div>
+      <div class="snap-center shrink-0 w-full h-100">
+        <img src="/img/Software engineer.png" alt="Slide 3" class="w-full h-full object-cover">
+      </div>
+    </div>
+    
+    <!-- content 01 -->
+    <div class="flex justify-between flex-col md:flex-row mt-20">
+      <p class="text-4xl p-6 font-bold font-mono">Highlight News</p>
+      <button class="text-xl font-bold font-mono border-2 border-green-600 text-green-600 pt-2 h-2 mt-5 mr-6 pb-9 pl-6 pr-6 rounded-2xl hover:bg-green-600 hover:text-white hover:scale-105 transition-all duration-300"><a href="/dist/otherpage/fullcontent.html">more</a></button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-5 justify-items-center">
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex suscipit similique quisquam debitis at atque harum velit dolor necessitatibus deserunt dolore repellat quibusdam iste, nostrum magni fugiat voluptas ad!</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corrupti repudiandae laudantium sunt aliquam temporibus inventore rem velit accusantium harum voluptate, excepturi, tempora, veritatis voluptas culpa quaerat assumenda sint ab?</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab vero voluptatibus voluptate perspiciatis possimus repellendus, corrupti in aspernatur deleniti omnis aperiam modi dolorem, doloremque, natus blanditiis cumque minus? Numquam, dicta.</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempore eaque labore rerum eius adipisci, illum cupiditate? Iure eius autem, sequi explicabo illo reprehenderit sit magnam repellendus illum neque. Itaque?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- img 01 -->
+    <div class="flex overflow-x-auto snap-x snap-mandatory border-0 rounded-2xl ml-5 mr-5 mt-20">
+      <div class="snap-center shrink-0 w-full h-110">
+        <img src="/img/คำคมเฮียโต้ง.png" alt="Slide 1" class="w-full h-full object-cover">
+      </div>
+  </section>
+
+  <!-- content 02 -->
+  <aside class="mt-40">
+    <div class="flex justify-between flex-col md:flex-row">
+      <p class="text-4xl p-6 font-bold font-mono">Activity</p>
+      <button class="text-xl font-bold font-mono border-2 border-green-600 text-green-600 pt-2 h-2 mt-5 mr-6 pb-9 pl-6 pr-6 rounded-2xl hover:bg-green-600 hover:text-white hover:scale-105 transition-all duration-300"><a href="/dist/otherpage/fullactive.html">more</a></button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-5 justify-items-center">
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex suscipit similique quisquam debitis at atque harum velit dolor necessitatibus deserunt dolore repellat quibusdam iste, nostrum magni fugiat voluptas ad!</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corrupti repudiandae laudantium sunt aliquam temporibus inventore rem velit accusantium harum voluptate, excepturi, tempora, veritatis voluptas culpa quaerat assumenda sint ab?</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab vero voluptatibus voluptate perspiciatis possimus repellendus, corrupti in aspernatur deleniti omnis aperiam modi dolorem, doloremque, natus blanditiis cumque minus? Numquam, dicta.</p>
+        </div>
+      </div>
+
+      <div class="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-10 hover:scale-105 transition-all duration-300">
+        <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r flex items-center justify-center"><img src="/img/photo.png" alt="" class="w-10 h-10"></div>
+        <div class="p-6">
+          <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">content</h5>
+          <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempore eaque labore rerum eius adipisci, illum cupiditate? Iure eius autem, sequi explicabo illo reprehenderit sit magnam repellendus illum neque. Itaque?</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- footer bar -->
+  <footer class="flex flex-col md:flex-row w-full bg-[#222222] text-gray-300 font-mono mt-10 p-5 justify-between items-center md:items-start">
+    <span class="mt-5 border-x-2">
+      <p class="border-y-2 p-2">Make By : </p><br>
+      <p class="pl-2">1. Yonlawat Somjai</p><br>
+      <p class="pl-2">2. Gemini code assist</p><br>
+      <p class="border-y-2 p-2 mt-3">School of Information and Communication Technology</p>
+    </span>
+<script src="script.js"></script>
+</main>
+</body>
+</html>

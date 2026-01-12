@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header class="bg-[#222222] text-gray-300 flex flex:-col md:flex-row justify-center h-10 p-2">
+    <div class="opacity-50">Test Tailwind CSS for design my info web page</div>    
+  </header>
+
+
+
+  <nav class="flex flex-col md:flex-row w-full shadow-2xl items-center justify-between p-4">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="/img/โลโก้สาขาSE.png" alt="" class="w-16 h-16">
+      <div class="text-xl font-mono ml-4">Software Engineer</div>
+    </div>
+    <div class="mb-4 md:mb-0">
+      <ul class="flex flex-row space-x-5">
+        <li><a href="/dist/index.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">Home</a></li>
+        <li><a href="/dist/otherpage/about.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">about</a></li>
+        <li><a href="/dist/otherpage/showcase.html" class="border-b-2 border-transparent hover:border-green-500 hover:text-green-600 pb-1 transition-colors duration-300">Showcase</a></li>
+        <li><a href="/dist/otherpage/contact.html" class="border-b-2 border-green-500 text-green-600 pb-1">Contact</a></li>
+      </ul>
+    </div>
+    <div id="login-btn" class="flex flex-row items-center px-4 py-2 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 hover:border-green-500 hover:scale-105 transition-all duration-300">
+      <div class="w-8 h-8 mr-2"><img src="/img/person.png" alt=""></div>
+      <div id="login-text" class="text-md font-bold">Login</div>
+    </div>
+  </nav>
+
+
+
+<section>
+  <div class="flex-col gap-4 w-full flex items-center justify-center mt-20">
+    <div class="w-28 h-28 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full">
+      <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" class="animate-ping">
+        <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div class="flex flex-row justify-center mt-7">
+    <div class="text-3xl font-mono animate-pulse [animation-delay:1s]">Tailwind CSS Contact Page Loading</div>
+    <div class="flex flex-row gap-2 mt-6 ml-2 animate-pulse [animation-delay:1s]">
+      <div class="w-2 h-2 rounded-full bg-black animate-bounce"></div>
+      <div class="w-2 h-2 rounded-full bg-black animate-bounce [animation-delay:-.3s]"></div>
+      <div class="w-2 h-2 rounded-full bg-black animate-bounce [animation-delay:-.5s]"></div>
+    </div>
+  </div>
+</section>
+
+<script src="/dist/script.js"></script>
+</body>
+</html>
